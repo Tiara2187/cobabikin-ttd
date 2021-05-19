@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
 import { Address } from '../models/Address'
-
 class AddressController {
     static async createAddress(req: Request, res: Response, next: NextFunction){
         const { village, district, city, province, country, zip } = req.body
